@@ -1,0 +1,13 @@
+node_modules/
+.DS_Store
+*.sw[mnpcod]
+*.log
+*.tmp
+log.txt
+.sass-cache/
+UserInterfaceState.xcuserstate
+bower_components/
+components/
+tmp
+temp
+dist
