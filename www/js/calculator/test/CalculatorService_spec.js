@@ -46,7 +46,17 @@ describe('CalculatorService', function() {
 
     });
 
-    // we still gotta do calc y but those two are the same and that's dumb.
+    describe('calculateY', function() {
+
+        it('converts y overworld value 0 to nether value of 0', function() {
+            expect(injected.CalculatorService.calculateY(0)).toBe(0);
+        });
+
+        it('converts y overworld value 42 to nether value of 42', function() {
+            expect(injected.CalculatorService.calculateY(42)).toBe(42);
+        });
+
+    });
 
 
 });

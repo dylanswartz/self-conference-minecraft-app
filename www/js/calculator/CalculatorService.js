@@ -4,6 +4,9 @@ var calculatorModule = angular.module('calculatorModule', []);
         calculateXandZ: function(overworldCoordinate) {
             var ratio = 8;
             return overworldCoordinate / ratio;
+        },
+        calculateY: function (overworldCoordinate) {
+            return overworldCoordinate;
         }
     };
 });
