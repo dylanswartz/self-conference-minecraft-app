@@ -1,12 +1,9 @@
 var calculatorModule = angular.module('calculatorModule', []);
     calculatorModule.factory('CalculatorService', function() {
     return {
-        calculateXandZ: function(overworldCoordinate) {
-            var ratio = 8;
-            return overworldCoordinate / ratio;
-        },
-        calculateY: function (overworldCoordinate) {
-            return overworldCoordinate;
+        calculateNetherCoordinate: function (overworldCoord, netherCoord) {
+            var ratio = {x:8, y:1, z:8};
+            return overworldCoord / ratio[netherCoord];
         }
     };
 });
