@@ -14,7 +14,7 @@ describe('CalculatorService', function() {
         });
     });
 
-    describe('calculateX', function() {
+    describe('calculateNetherCoordinate', function() {
 
         it('converts x overworld value 8 to nether value of 1', function() {
             expect(injected.CalculatorService.calculateNetherCoordinate(8, 'x')).toBe(1);
@@ -28,10 +28,6 @@ describe('CalculatorService', function() {
             expect(injected.CalculatorService.calculateNetherCoordinate(16, 'x')).toBe(2);
         });
 
-    });
-
-    describe('calculateZ', function() {
-
         it('converts z overworld value 8 to nether value of 1', function() {
             expect(injected.CalculatorService.calculateNetherCoordinate(8, 'z')).toBe(1);
         });
@@ -43,10 +39,6 @@ describe('CalculatorService', function() {
         it('converts z overworld value 16 to nether value of 16', function() {
             expect(injected.CalculatorService.calculateNetherCoordinate(16, 'z')).toBe(2);
         });
-
-    });
-
-    describe('calculateY', function() {
 
         it('converts y overworld value 0 to nether value of 0', function() {
             expect(injected.CalculatorService.calculateNetherCoordinate(0, 'y')).toBe(0);
