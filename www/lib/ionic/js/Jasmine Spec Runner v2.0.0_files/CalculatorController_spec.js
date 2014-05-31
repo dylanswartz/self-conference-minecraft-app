@@ -28,7 +28,7 @@ describe('CalculatorController', function() {
 
         it('updates 16,5,16 to nether coords 2,5,2', function(){
             createController();
-            $scope.overworld = {
+            var overworld = {
                 x: 16,
                 y: 5,
                 z: 16
@@ -38,21 +38,26 @@ describe('CalculatorController', function() {
                 y: 5,
                 z: 2
             };
-            $scope.calculate();
+            $scope.calculate(overworld);
             expect($scope.nether).toEqual(expected);
         })
 
     });
 
-    it('updates 0,0,0 to nether coords 0,0,0', function(){
+    it('updates 16,5,16 to nether coords 2,5,2', function(){
         createController();
-        $scope.overworld = {
-            x: 0,
-            y: 0,
-            z: 0
+        var overworld = {
+            x: 16,
+            y: 5,
+            z: 16
         };
-        $scope.calculate();
-        expect($scope.nether).toEqual($scope.overworld);
+        var expected = {
+            x: 2,
+            y: 5,
+            z: 2
+        };
+        $scope.calculate(overworld);
+        expect($scope.nether).toEqual(expected);
 
     })
 
