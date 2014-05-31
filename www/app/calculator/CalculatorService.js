@@ -1,4 +1,4 @@
-var calculatorModule = angular.module('calculatorModule', []);
+var calculatorModule = angular.module('calculator', []);
     calculatorModule.factory('CalculatorService', function() {
     return {
         calculateNetherCoordinate: function (overworldCoord, netherCoord) {

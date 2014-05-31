@@ -1,27 +1,29 @@
-<div class="list">
-    <div class="item item-divider">
-        Enter overworld coordinates
-    </div>
+<div ng-controller="CalculatorController">
+    <div class="list">
+        <div class="item item-divider">
+            Enter overworld coordinates
+        </div>
 
-    <label class="item item-input">
-        <span class="input-label">X Coordinate: </span>
-        <input type="number" placeholder="123">
-    </label>
+        <label class="item item-input">
+            <span class="input-label">X Coordinate: </span>
+            <input type="number" placeholder="123">
+        </label>
 
-    <label class="item item-input">
-        <span class="input-label">Y Coordinate: </span>
-        <input type="number" placeholder="123">
-    </label>
-    <label class="item item-input">
-        <span class="input-label">Z Coordinate: </span>
-        <input type="number" placeholder="123">
-    </label>
-    <div class="item item-divider">
-        Result:
+        <label class="item item-input">
+            <span class="input-label">Y Coordinate: </span>
+            <input type="number" placeholder="123">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Z Coordinate: </span>
+            <input type="number" placeholder="123">
+        </label>
+        <div class="item item-divider">
+            Result: X: {{nether.x}} Y: {{nether.y}} Z: {{nether.z}}
+        </div>
     </div>
-</div>
-<div>
-    <button class="button button-full button-balanced">
-        Convert to Nether Coordinates
-    </button>
+    <div>
+        <button ng-click="calculate()" class="button button-full button-balanced">
+            Convert to Nether Coordinates
+        </button>
+    </div>
 </div>

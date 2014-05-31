@@ -4,7 +4,7 @@ describe('CalculatorService', function() {
     var injected, $scope;
 
     beforeEach(function(){
-        module('calculatorModule');
+        module('calculator');
         inject(function($rootScope, CalculatorService) {
             injected = {
                 $rootScope: $rootScope,
