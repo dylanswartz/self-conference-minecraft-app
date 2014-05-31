@@ -2,7 +2,8 @@ var calculatorModule = angular.module('calculatorModule', []);
     calculatorModule.factory('CalculatorService', function() {
     return {
         calculateXandZ: function(overworldCoordinate) {
-            return overworldCoordinate / 8;
+            var ratio = 8;
+            return overworldCoordinate / ratio;
         }
     };
 });
