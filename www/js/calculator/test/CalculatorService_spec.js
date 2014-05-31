@@ -24,8 +24,8 @@ describe('CalculatorService', function() {
             expect(injected.CalculatorService.calculateX(0)).toBe(0);
         });
 
-        it('converts x overworld value 0 to nether value of 0', function() {
-            expect(injected.CalculatorService.calculateX(0)).toBe(0);
+        it('converts x overworld value 16 to nether value of 2', function() {
+            expect(injected.CalculatorService.calculateX(16)).toBe(2);
         });
 
     });
@@ -40,8 +40,8 @@ describe('CalculatorService', function() {
             expect(injected.CalculatorService.calculateZ(0)).toBe(0);
         });
 
-        it('converts z overworld value 0 to nether value of 0', function() {
-            expect(injected.CalculatorService.calculateZ(0)).toBe(0);
+        it('converts z overworld value 16 to nether value of 16', function() {
+            expect(injected.CalculatorService.calculateZ(16)).toBe(2);
         });
 
     });
