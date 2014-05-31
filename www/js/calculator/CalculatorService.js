@@ -3,6 +3,9 @@ var calculatorModule = angular.module('calculatorModule', []);
     return {
         calculateX: function(x) {
             return x / 8;
+        },
+        calculateZ: function(z) {
+            return z / 8;
         }
     };
 });
